@@ -1,0 +1,393 @@
+/*
+ * Globals
+ */
+
+/* Fonts */
+.fa-5 {
+  font-size: 100px;
+  color: #38325c;
+}
+
+.fa-3 {
+  font-size: 30px;
+  color: #000;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+
+.wrapper-head {
+  background-image: url('../img/home-deg.png');
+  background-position: center top;
+  background-attachment: scroll;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  box-shadow: 4px 25px 32px #000;
+  height: 679px;
+}
+
+.shadow-bottom {
+  position: absolute;
+  box-shadow: 4px -25px 32px #000;
+  height: 20px;
+}
+
+.wrapper-features {
+  background-image: url(../img/bg-pattern.png), linear-gradient(to left,#ffffff,#edebf9);
+  position: relative;
+  padding-top: 80px;
+  width: 100%;
+  height: 900px;
+  font-family: "Open Sans";
+}
+
+#nav-contacto, #nav-contacto i {
+  color: #38325c;
+  font-size: 1.5em;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.feature-list {
+  overflow: auto;
+}
+
+.feature {
+  position: relative;
+  margin-top: 60px;
+  float: left;
+  padding-left: 10%;
+  width: 30%;
+  height: 270px;
+}
+
+.feature h2 {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 1.8em;
+  font-weight: 300;
+  height: 60px;
+}
+
+.feature p {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.wrapper-contacto {
+  position: relative;
+  background-color: #38325c;
+  height: 300px;
+  overflow: hidden;
+}
+
+.app-download {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.email-contact span, .email-contact {
+  text-align: left;
+  display: inline-block;
+  color: #fff;
+  font-size: 1em;
+  font-family "Open Sans";
+  width: 200px;
+  vertical-align: middle;
+}
+
+.google-badge {
+  text-align: center;
+  width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.google-badge img {
+  width: 250px;
+}
+
+.cel-screen-alarms {
+  width: 200px; 
+  bottom: -50px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cel-screen-alarms img {
+  width: 200px;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  width: 100%;
+  /*height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+
+.cel-screen-notifications {
+  display: inline-block;
+  float: left;
+  position: relative;
+  left: -150px;
+  top: 40px;
+  width: 50%
+}
+
+.cel-screen-notifications img {
+  width: 250px;
+}
+
+.frase-cover {
+  display: inline-block;
+  float: right;
+  width: 50%;
+  position: relative;
+  top: 100px;
+}
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 980px) {
+  .wrapper-head {
+    height: 500px !important;
+    overflow: hidden;
+  }
+
+  .cel-screen-notifications {
+    width: 227px !important;
+    left: 127px !important;
+    top: -40px !important;
+  }
+  .cel-screen-notifications img{
+    width: 227px !important;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .wrapper-head {
+    height: 408px !important;
+    overflow: hidden;
+  }
+
+  .cel-screen-notifications {
+    width: 188px !important;
+    left: 80px !important;
+    top: 0px !important;
+  }
+  .cel-screen-notifications img{
+    width: 164px !important;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .wrapper-head {
+    height: 408px !important;
+    overflow: hidden;
+  }
+
+  .cel-screen-notifications {
+    width: 168px !important;
+    left: 80px !important;
+    top: -10px !important;
+  }
+  .cel-screen-notifications img{
+    width: 164px !important;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .masthead {
+    height: 200px;
+  }
+
+  .wrapper-head {
+    background-color: #ccc;
+    height: 521px !important;
+    overflow: hidden;
+  }
+
+  .cel-screen-notifications {
+    width: 168px !important;
+    left: 80px !important;
+    top: -10px !important;
+  }
+  .cel-screen-notifications img{
+    width: 164px !important;
+  }
+
+  .wrapper-features {
+    height: auto !important;
+  }
+
+  .feature {
+      position: relative !important;
+      margin: auto !important;
+      padding-left: 0 !important;
+      width: 250px !important;
+      height: 270px !important;
+      float: initial !important;
+  }
+
+  .app-download {
+    width: auto !important;
+    margin-top: 20px;
+    height: auto !important
+  }
+
+  .email-contact {
+    text-align: center !important;
+  }
+
+  .cel-screen-alarms {
+    width: 200px; 
+    position: relative;
+    display: inline-block;
+  }
+
+  .app-download {
+    width: auto !important;
+    margin-top: 20px;
+    height: auto !important
+  }
+}
+
